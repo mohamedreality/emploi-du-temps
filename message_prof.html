@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacter le professeur</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>📩 Envoyer un message au professeur</h2>
+
+<form>
+    <label>Nom :</label><br>
+    <input type="text" name="nom"><br><br>
+
+    <label>Email :</label><br>
+    <input type="email" name="email"><br><br>
+
+    <label>Message :</label><br>
+    <textarea name="message" rows="5"></textarea><br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+</body>
+</html>
