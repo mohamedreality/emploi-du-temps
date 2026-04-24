@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 1</title>
+</head>
+<body>
+
+<h2>Exercice 1</h2>
+
+<input type="number" id="a" placeholder="Premier nombre">
+<input type="number" id="b" placeholder="Deuxième nombre">
+<button onclick="calculate()">Calculer</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+    let a = parseFloat(document.getElementById("a").value);
+    let b = parseFloat(document.getElementById("b").value);
+    
+    document.getElementById("result").innerHTML = 
+        "Somme: " + (a + b) + "<br>" +
+        "Difference: " + (a - b) + "<br>" +
+        "Produit: " + (a * b) + "<br>" +
+        "Quotient: " + (a / b);
+}
+</script>
+
+</body>
+</html>
